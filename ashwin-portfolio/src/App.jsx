@@ -298,7 +298,7 @@ useEffect(() => {
 
       {/* Experience Section */}
       <section id="experience" className="section-container fade-in text-left">
-        <h2 className="section-title">Industry Engineering</h2>
+        <h2 className="section-title">Experience</h2>
         
         <div className="experience-card">
           <div className="exp-top-bar">
