@@ -425,7 +425,7 @@ useEffect(() => {
     <li className="edu-item">
       <span className="education-year">2020 — 2022</span>
       <h3>12th Grade</h3>
-      <p>Kendriya Vidyalaya no.1</p>
+      <p>Kendriya Vidyalaya No.1</p>
       <span className="education-location">Calicut, Kerala, India</span>
     </li>
   </ol>
