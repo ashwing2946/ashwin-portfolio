@@ -299,3 +299,81 @@ body {
     transform: translateY(-2px);
   }
 }
+
+/* --- Mobile hero layout --- */
+@media (max-width: 768px) {
+  .hero-section {
+    width: 100%;
+    min-height: 100vh;
+    min-height: 100svh;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 6.5rem 6% 0;
+  }
+  .hero-content {
+    order: 1;
+    max-width: 100%;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+  .uppercase-name {
+    font-size: clamp(3rem, 14vw, 4.2rem);
+    letter-spacing: -1px;
+    margin-bottom: 1rem;
+  }
+  .hero-subtitle {
+    font-size: 1rem;
+    margin-bottom: 1.75rem;
+  }
+  .hero-actions {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .hero-lean-wrapper {
+    order: 2;
+    position: relative;
+    left: auto;
+    bottom: auto;
+    width: 100%;
+    height: 45vh;
+    min-height: 260px;
+    margin: auto 0 0;
+    opacity: 1;
+  }
+}
+
+/* Education timeline */
+#education .edu-timeline {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+#education .edu-item {
+  position: relative;
+  padding-left: 2rem;
+}
+/* dot */
+#education .edu-item::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.1rem;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--color-cyan);
+  box-shadow: 0 0 0 4px rgba(56, 189, 248, 0.15), 0 0 12px rgba(56, 189, 248, 0.5);
+}
+/* connecting line down to the next dot */
+#education .edu-item:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  left: 5px;
+  top: calc(0.1rem + 18px);
+  bottom: -2.3rem;
+  width: 2px;
+  background: linear-gradient(to bottom, var(--color-cyan), rgba(56, 189, 248, 0.15));
+}

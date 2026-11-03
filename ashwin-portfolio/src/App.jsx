@@ -28,6 +28,20 @@ const navItems = [
   ['contact', 'Contact'],
 ];
 
+const EMAIL = 'ashwingvasantham@gmail.com';
+
+const handleEmailClick = (e) => {
+  const isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+  if (!isMobile) {
+    e.preventDefault();
+    window.open(
+      `https://mail.google.com/mail/?view=cm&fs=1&to=${EMAIL}`,
+      '_blank',
+      'noopener,noreferrer'
+    );
+  }
+};
+
 function App() {
   // --- States ---
   const [theme, setTheme] = useState('dark');
@@ -255,7 +269,7 @@ useEffect(() => {
             ASHWIN<br/>GIRISH
           </h1>
           <p className="hero-subtitle">
-            AI Engineer Intern specializing in <span className="highlight-blue">agentic workflows</span>, <span className="highlight-blue">Vision-Language Models (VLMs)</span>, and scalable production-ready architectures.
+            AI Engineer Intern specializing in <span className="highlight-blue">Agentic Workflows</span>, <span className="highlight-blue">Vision-Language Models (VLMs)</span>, and scalable production-ready architectures.
           </p>
           <div className="hero-actions">
             <a href="#projects" className="btn-explore">Explore Work</a>
@@ -400,28 +414,39 @@ useEffect(() => {
           <p className="section-pre-title">LEARNING & MILESTONES</p>
           <h2 className="section-title">The foundations<span className="title-period">.</span></h2>
           <div className="education-grid">
-            <article className="education-card">
-              <span className="education-year">2022 — 2026</span>
-              <h3>B.E. Computer Science</h3>
-              <p>Chandigarh University</p>
-              <span className="education-location">Gharuan, Punjab, India</span>
-            </article>
-            <article className="education-card">
-              <span className="education-year">CERTIFICATIONS</span>
-              <h3>Courses & learning</h3>
-              <ul className="cert-list">{certifications.map((item) => <li key={item}>{item}</li>)}</ul>
-            </article>
-          </div>
+  <article className="education-card">
+  <ol className="edu-timeline">
+    <li className="edu-item">
+      <span className="education-year">2022 — 2026</span>
+      <h3>B.E. Computer Science</h3>
+      <p>Chandigarh University</p>
+      <span className="education-location">Gharuan, Punjab, India</span>
+    </li>
+    <li className="edu-item">
+      <span className="education-year">2020 — 2022</span>
+      <h3>12th Grade</h3>
+      <p>Kendriya Vidyalaya no.1</p>
+      <span className="education-location">Calicut, Kerala, India</span>
+    </li>
+  </ol>
+</article>
+
+  <article className="education-card">
+    <span className="education-year">CERTIFICATIONS</span>
+    <h3>Courses & learning</h3>
+    <ul className="cert-list">{certifications.map((item) => <li key={item}>{item}</li>)}</ul>
+  </article>
+</div>
           <div className="achievement-block">
             <h3>Beyond the screen</h3>
-            <p>Teamwork, event coordination , culture, and sports have also been part of my journey.</p>
+            <p>Teamwork, Event Coordination , Culture, and Sports have also been part of my journey.</p>
             <div className="achievement-tags">{achievements.map((item) => <span key={item}>{item}</span>)}</div>
           </div>
         </section>
 
         <section className="section-container languages-section fade-in">
           <p className="section-pre-title">A FEW MORE THINGS</p>
-          <div className="languages-row"><h2>Languages Known</h2><p>English · Malayalam · Hindi</p></div>
+          <div className="languages-row"><h2>Languages Known</h2><p>English · Hindi · Malayalam </p></div>
         </section>
 
 
@@ -433,7 +458,7 @@ useEffect(() => {
         </p>
         
         <div className="contact-buttons">
-          <a href="mailto:ashwingvasantham@gmail.com" className="btn-email">Email</a>
+          <a href={`mailto:${EMAIL}`} onClick={handleEmailClick} className="btn-email">Email</a>
           <a href="https://www.linkedin.com/in/ashwin-girish-861259328/" target="_blank" rel="noreferrer" className="btn-social">
             LinkedIn
           </a>
