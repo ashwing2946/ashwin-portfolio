@@ -326,6 +326,8 @@ useEffect(() => {
             <li>Implemented agentic AI workflows using <strong>LangChain</strong> and <strong>LangGraph</strong> for contextual diagram analysis, streaming conversational Q&A, and architectural insights.</li>
             <li>Deployed and served a quantized VLM using <strong>vLLM</strong> on an <strong>NVIDIA L4 GPU</strong>, integrating remote model inference through an SSH-secured tunnel with a FastAPI backend and React frontend.</li>
             <li>Designed an automated <strong>Background Verification (BGV)</strong> agentic workflow covering email classification, OCR extraction, requester authentication, employee matching, rule validation, and audit logging.</li>
+            <li>Orchestrated end-to-end dataset preparation by managing <strong>data extraction</strong>, precise <strong>data labelling</strong>, and targeted <strong>data annotation</strong>, followed by strict <strong>data verification</strong> protocols to establish high-fidelity ground truth.</li>
+            <li>Engineered and optimized custom computer vision pipelines by executing structured <strong>data training using YOLO</strong>, significantly improving the model's ability to accurately detect and classify complex graphical components.</li>
           </ul>
         </div>
       </section>
