@@ -190,52 +190,109 @@ useEffect(() => {
     }
   ];
 
-  const projects = [
-    {
-      id: "01",
-      category: "Agents & VLM",
-      categoryLabel: "VLM & AGENTS",
-      highlight: "NVIDIA L4 + vLLM",
-      highlightClass: "cyan-text",
-      title: "Flowchart AI",
-      subtitle: "VLM-Powered Diagram Understanding & Streaming Blueprint Engine",
-      description: "Full-stack platform that parses complex flowchart imagery into validated JSON graph blueprints and delivers real-time streaming conversational analysis via LangGraph and vLLM on remote NVIDIA L4 GPU infrastructure.",
-      tech: ["FastAPI", "LangGraph", "vLLM", "React", "OpenCV"]
-    },
-    {
-      id: "02",
-      category: "Agents & VLM",
-      categoryLabel: "AGENTIC WORKFLOW",
-      highlight: "LangGraph + OCR",
-      highlightClass: "purple-text",
-      title: "BGV Agent",
-      subtitle: "Autonomous Background Verification Orchestrator",
-      description: "Multi-step agentic workflow orchestrating email classification, OCR document extraction, requester authentication, employee matching, business-rule validation, human-in-the-loop approval routing, and audit logging.",
-      tech: ["Python", "LangGraph", "FastAPI", "RAG"]
-    },
-    {
-      id: "03",
-      category: "ML & Vision",
-      categoryLabel: "NLP CLASSIFICATION",
-      highlight: "97% Accuracy",
-      highlightClass: "green-text",
-      title: "SMS Spam Classification",
-      subtitle: "High-Precision NLP Message Filtering Pipeline",
-      description: "Machine learning inference pipeline built with TF-IDF vectorization and Logistic Regression with custom threshold tuning, achieving 97% classification accuracy evaluated across precision, recall, and F1-score.",
-      tech: ["Python", "Scikit-Learn", "TF-IDF"]
-    },
-    {
-      id: "04",
-      category: "ML & Vision",
-      categoryLabel: "COMPUTER VISION",
-      highlight: "TensorFlow + Deep Learning",
-      highlightClass: "pink-text",
-      title: "AI Face Recognition Attendance",
-      subtitle: "Automated Biometric Attendance System",
-      description: "Deep learning facial recognition pipeline built in Python and TensorFlow to automatically identify students and log real-time attendance records with a streamlined institutional interface.",
-      tech: ["Python", "TensorFlow", "OpenCV"]
-    }
-  ];
+  
+const projects = [
+  {
+    id: "01",
+    category: "Agents & VLM",
+    categoryLabel: "VLM & AGENTS",
+    highlight: "NVIDIA L4 + vLLM",
+    highlightClass: "cyan-text",
+    title: "Flowchart AI",
+    subtitle: "VLM-Powered Diagram Understanding & Streaming Blueprint Engine",
+    description: "Full-stack platform that parses complex flowchart imagery into validated JSON graph blueprints and delivers real-time streaming conversational analysis via LangGraph and vLLM on remote NVIDIA L4 GPU infrastructure.",
+    tech: ["FastAPI", "LangGraph", "vLLM", "React", "OpenCV"]
+  },
+  {
+    id: "02",
+    category: "Agents & VLM",
+    categoryLabel: "AGENTIC WORKFLOW",
+    highlight: "LangGraph + OCR",
+    highlightClass: "purple-text",
+    title: "BGV Agent",
+    subtitle: "Autonomous Background Verification Orchestrator",
+    description: "Multi-step agentic workflow orchestrating email classification, OCR document extraction, requester authentication, employee matching, business-rule validation, human-in-the-loop approval routing, and audit logging.",
+    tech: ["Python", "LangGraph", "FastAPI", "RAG"]
+  },
+  {
+    id: "03",
+    category: "ML & Vision",
+    categoryLabel: "NLP CLASSIFICATION",
+    highlight: "97% Accuracy",
+    highlightClass: "green-text",
+    title: "SMS Spam Classification",
+    subtitle: "High-Precision NLP Message Filtering Pipeline",
+    description: "Machine learning inference pipeline built with TF-IDF vectorization and Logistic Regression with custom threshold tuning, achieving 97% classification accuracy.",
+    tech: ["Python", "Scikit-Learn", "TF-IDF"]
+  },
+  {
+    id: "04",
+    category: "ML & Vision",
+    categoryLabel: "COMPUTER VISION",
+    highlight: "TensorFlow + Deep Learning",
+    highlightClass: "pink-text",
+    title: "AI Face Recognition Attendance",
+    subtitle: "Automated Biometric Attendance System",
+    description: "Deep learning facial recognition pipeline built in Python and TensorFlow to automatically identify students and log real-time attendance records with a streamlined institutional interface.",
+    tech: ["Python", "TensorFlow", "OpenCV"]
+  },
+  {
+    id: "05",
+    category: "ML & Vision",
+    categoryLabel: "OBJECT DETECTION",
+    highlight: "Near-Perfect Accuracy",
+    highlightClass: "green-text",
+    title: "YOLO-Based Object Detection & Counting",
+    subtitle: "Real-Time Industrial Computer Vision System",
+    description: "Trained and implemented YOLO and YOLO OBB models for real-time object detection and counting in an industrial environment. Developed detection workflows for multiple object categories, including orientation-aware detection using rotated bounding boxes. Achieved near-perfect detection accuracy while keeping application-specific details confidential.",
+    tech: ["Python", "YOLO", "YOLO OBB", "Computer Vision", "Object Detection"]
+  },
+  {
+    id: "06",
+    category: "Software & Systems",
+    categoryLabel: "SOCIAL MEDIA AUTOMATION",
+    highlight: "Python Automation",
+    highlightClass: "cyan-text",
+    title: "Tweepy — Twitter Bot",
+    subtitle: "Automated Social Media Engagement & Trend Analysis",
+    description: "Developed a Python-based Twitter bot using Tweepy to automate replies, retweets, and data collection. Added trending-topic analysis, scheduled tweet functionality, and real-time engagement insights.",
+    tech: ["Python", "Tweepy", "Twitter API", "Automation"]
+  },
+  {
+    id: "07",
+    category: "Software & Systems",
+    categoryLabel: "3D CAD DESIGN",
+    highlight: "3D Modelling",
+    highlightClass: "purple-text",
+    title: "Headset Surface Modelling",
+    subtitle: "CAD Design for 3D Printing",
+    description: "Designed a detailed 3D headset model in Autodesk for 3D printing, focusing on surface modelling, structural integrity, and ergonomic considerations while accounting for compatibility with different 3D printing materials.",
+    tech: ["Autodesk", "3D Modelling", "CAD", "3D Printing"]
+  },
+  {
+    id: "08",
+    category: "Software & Systems",
+    categoryLabel: "DATABASE MANAGEMENT",
+    highlight: "SQL Database",
+    highlightClass: "green-text",
+    title: "Student Management Database",
+    subtitle: "Relational Database & Query Management System",
+    description: "Built an SQL-based database system to manage student records, using relational schemas and optimized queries for efficient data retrieval and data integrity. Incorporated role-based access control for improved security.",
+    tech: ["SQL", "Database Design", "Relational Databases"]
+  },
+  {
+    id: "09",
+    category: "Software & Systems",
+    categoryLabel: "IoT & AUTOMATION",
+    highlight: "Smart Monitoring",
+    highlightClass: "cyan-text",
+    title: "Smart Irrigation System",
+    subtitle: "IoT-Based Automated Water Management",
+    description: "Developed an IoT-based irrigation system using real-time soil moisture monitoring. Integrated soil moisture sensors with a microcontroller to automate water distribution when required, reducing unnecessary water usage and manual intervention.",
+    tech: ["IoT", "Soil Moisture Sensors", "Microcontroller", "Automation"]
+  }
+];
+
 
   // --- Filtering Logic ---
   const filteredProjects = projects.filter(project => {
@@ -332,53 +389,76 @@ useEffect(() => {
         </div>
       </section>
 
-      {/* Projects Section */}
-      <section id="projects" className="section-container fade-in text-left">
-        <div className="projects-header">
-          <div>
-            <h2 className="section-title m-0">Systems & Applications</h2>
-          </div>
-          <div className="project-filters">
-            <span 
-              className={`filter-pill ${activeFilter === 'All' ? 'active' : ''}`}
-              onClick={() => setActiveFilter('All')}
-            >
-              All (4)
-            </span>
-            <span 
-              className={`filter-pill ${activeFilter === 'Agents & VLM' ? 'active' : ''}`}
-              onClick={() => setActiveFilter('Agents & VLM')}
-            >
-              Agents & VLM
-            </span>
-            <span 
-              className={`filter-pill ${activeFilter === 'ML & Vision' ? 'active' : ''}`}
-              onClick={() => setActiveFilter('ML & Vision')}
-            >
-              ML & Vision
-            </span>
-          </div>
+      
+{/* Projects Section */}
+<section id="projects" className="section-container fade-in text-left">
+  <div className="projects-header">
+    <div>
+      <h2 className="section-title m-0">Systems & Applications</h2>
+    </div>
+
+    <div className="project-filters">
+      <span
+        className={`filter-pill ${activeFilter === 'All' ? 'active' : ''}`}
+        onClick={() => setActiveFilter('All')}
+      >
+        All ({projects.length})
+      </span>
+
+      <span
+        className={`filter-pill ${activeFilter === 'Agents & VLM' ? 'active' : ''}`}
+        onClick={() => setActiveFilter('Agents & VLM')}
+      >
+        Agents & VLM
+      </span>
+
+      <span
+        className={`filter-pill ${activeFilter === 'ML & Vision' ? 'active' : ''}`}
+        onClick={() => setActiveFilter('ML & Vision')}
+      >
+        ML & Vision
+      </span>
+
+      <span
+        className={`filter-pill ${activeFilter === 'Software & Systems' ? 'active' : ''}`}
+        onClick={() => setActiveFilter('Software & Systems')}
+      >
+        Software & Systems
+      </span>
+    </div>
+  </div>
+
+  <div className="projects-grid">
+    {filteredProjects.map((project) => (
+      <div key={project.id} className="project-card">
+        <div className="proj-meta">
+          <span className="proj-num">
+            {project.id} / {project.categoryLabel}
+          </span>
+          <span className={`proj-highlight ${project.highlightClass}`}>
+            {project.highlight}
+          </span>
         </div>
 
-        <div className="projects-grid">
-          {filteredProjects.map((project) => (
-            <div key={project.id} className="project-card">
-              <div className="proj-meta">
-                <span className="proj-num">{project.id} / {project.categoryLabel}</span>
-                <span className={`proj-highlight ${project.highlightClass}`}>{project.highlight}</span>
-              </div>
-              <h3>{project.title}</h3>
-              <p className={`proj-sub ${project.highlightClass}`}>{project.subtitle}</p>
-              <p className="proj-desc">{project.description}</p>
-              <div className="proj-tags">
-                {project.tech.map((t, i) => (
-                  <span key={i}>{t}</span>
-                ))}
-              </div>
-            </div>
+        <h3>{project.title}</h3>
+
+        <p className={`proj-sub ${project.highlightClass}`}>
+          {project.subtitle}
+        </p>
+
+        <p className="proj-desc">{project.description}</p>
+
+        <div className="proj-tags">
+          {project.tech.map((t, i) => (
+            <span key={i}>{t}</span>
           ))}
         </div>
-      </section>
+      </div>
+    ))}
+  </div>
+</section>
+
+      
 
       {/* Skills Section */}
       <section id="skills" className="section-container fade-in text-left">
