@@ -460,76 +460,73 @@ const projects = [
 
       
 
-      {/* Skills Section */}
-      <section id="skills" className="section-container fade-in text-left">
-        <h2 className="section-title">Technical Arsenal</h2>
-        
-        <div className="skills-layout">
-          <div className="skills-column">
-            <h3 className="cyan-text">AI & Machine Learning</h3>
-            <div className="skills-tags">
-              <span>LangGraph</span><span>LangChain</span><span>vLLM</span><span>VLMs / LLMs</span><span>RAG Pipelines</span><span>YOLO / OpenCV</span><span>Scikit-Learn</span>
-            </div>
-          </div>
-          <div className="skills-column">
-            <h3 className="purple-text">Backend & Systems</h3>
-            <div className="skills-tags">
-              <span>FastAPI</span><span>Python (uv / venv)</span><span>REST APIs</span><span>SQL / Databases</span><span>Linux / GPU SSH</span>
-            </div>
-          </div>
-          <div className="skills-column">
-            <h3 className="pink-text">Frontend & Web</h3>
-            <div className="skills-tags">
-              <span>React.js</span><span>Vite</span><span>JavaScript (ES6+)</span><span>HTML5 / CSS3</span><span>UI / UX Design</span>
-            </div>
-          </div>
-          <div className="skills-column">
-            <h3 className="green-text">Tools & DevOps</h3>
-            <div className="skills-tags">
-              <span>Git / GitHub</span><span>VS Code</span><span>NVIDIA L4 GPU</span><span>PaddleOCR</span><span>Schema Validation</span>
-            </div>
-          </div>
-        </div>
-      </section>
+    {/* Skills Section */}
+<section id="skills" className="section-container fade-in text-left">
+  <h2 className="section-title">Technical Arsenal</h2>
 
-        <section id="education" className="section-container fade-in">
-          <p className="section-pre-title">LEARNING & MILESTONES</p>
-          <h2 className="section-title">The foundations<span className="title-period">.</span></h2>
-          <div className="education-grid">
-  <article className="education-card">
-  <ol className="edu-timeline">
-    <li className="edu-item">
-      <span className="education-year">2022 — 2026</span>
-      <h3>B.E. Computer Science</h3>
-      <p>Chandigarh University</p>
-      <span className="education-location">Gharuan, Punjab, India</span>
-    </li>
-    <li className="edu-item">
-      <span className="education-year">2020 — 2022</span>
-      <h3>12th Grade</h3>
-      <p>Kendriya Vidyalaya No.1</p>
-      <span className="education-location">Calicut, Kerala, India</span>
-    </li>
-  </ol>
-</article>
+  <div className="skills-layout">
+    <div className="skills-column">
+      <h3 className="cyan-text">AI & Machine Learning</h3>
+      <div className="skills-tags">
+        <span>LangGraph</span>
+        <span>LangChain</span>
+        <span>LLMs / VLMs</span>
+        <span>RAG Pipelines</span>
+        <span>vLLM</span>
+        <span>YOLO</span>
+        <span>YOLO OBB</span>
+        <span>OpenCV</span>
+        <span>Scikit-Learn</span>
+        <span>TF-IDF</span>
+        <span>Model Training</span>
+        <span>Prompt Engineering</span>
+      </div>
+    </div>
 
-  <article className="education-card">
-    <span className="education-year">CERTIFICATIONS</span>
-    <h3>Courses & learning</h3>
-    <ul className="cert-list">{certifications.map((item) => <li key={item}>{item}</li>)}</ul>
-  </article>
-</div>
-          <div className="achievement-block">
-            <h3>Beyond the screen</h3>
-            <p>Teamwork, Event Coordination , Culture, and Sports have also been part of my journey.</p>
-            <div className="achievement-tags">{achievements.map((item) => <span key={item}>{item}</span>)}</div>
-          </div>
-        </section>
+    <div className="skills-column">
+      <h3 className="purple-text">Backend & Programming</h3>
+      <div className="skills-tags">
+        <span>Python</span>
+        <span>FastAPI</span>
+        <span>REST APIs</span>
+        <span>SQL</span>
+        <span>Database Design</span>
+        <span>Relational Databases</span>
+        <span>Data Preprocessing</span>
+        <span>Schema Validation</span>
+      </div>
+    </div>
 
-        <section className="section-container languages-section fade-in">
-          <p className="section-pre-title">A FEW MORE THINGS</p>
-          <div className="languages-row"><h2>Languages Known</h2><p>English · Hindi · Malayalam </p></div>
-        </section>
+    <div className="skills-column">
+      <h3 className="pink-text">Frontend & Web</h3>
+      <div className="skills-tags">
+        <span>React.js</span>
+        <span>Vite</span>
+        <span>JavaScript (ES6+)</span>
+        <span>HTML5</span>
+        <span>CSS3</span>
+        <span>UI / UX Design</span>
+      </div>
+    </div>
+
+    <div className="skills-column">
+      <h3 className="green-text">Tools, Automation & Systems</h3>
+      <div className="skills-tags">
+        <span>Git / GitHub</span>
+        <span>VS Code</span>
+        <span>vLLM Deployment</span>
+        <span>GPU / SSH</span>
+        <span>PaddleOCR</span>
+        <span>Tweepy</span>
+        <span>Twitter API</span>
+        <span>Autodesk CAD</span>
+        <span>3D Modelling</span>
+        <span>IoT</span>
+        <span>Microcontrollers</span>
+      </div>
+    </div>
+  </div>
+</section>
 
 
       {/* Contact Section */}
